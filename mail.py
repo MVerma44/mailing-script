@@ -54,7 +54,7 @@ for i in range(len(contact)):
 
 
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-        smtp.login('vmayank.1725@gmail.com', password)
+        smtp.login('vmayank.1725@gmail.com', 'password')
         smtp.send_message(msg)
 
         
