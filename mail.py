@@ -19,8 +19,8 @@ name = df['Name'].to_list()
 for i in range(len(contact)):
 
     msg = EmailMessage()
-    msg['Subject'] = "Platinum Membership"
-    msg['From'] = "vmayank.1725@gmail.com"
+    msg['Subject'] = " "
+    msg['From'] = " "
 
     msg.set_content(''' ''')
     html_msg = open('mssg.html').read()
@@ -54,7 +54,7 @@ for i in range(len(contact)):
 
 
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-        smtp.login('vmayank.1725@gmail.com', 'password')
+        smtp.login('mail_id', 'password')
         smtp.send_message(msg)
 
         
